@@ -14,6 +14,8 @@ alph_matrix=[['a','b','c','d'],
              ['u','y','w','x'],
              ['y','z','','']]
 first_round = [[], [], [], [], [], [], [], []]
+
+""" In this section we will git inputs like how many characters in word etc and some basics steps"""
 def starter():
     user_in_len=int(input("So Can you tell me Total letters in your word: "))
     breaker=0
@@ -27,6 +29,7 @@ def starter():
             print("Wrong Input please Enter Column 0 to 3:>")
         breaker=breaker+1
 """-------------------------------------------------------------------"""
+""" Here program will display output and start 2nd Round """
 def second_round_display():
     # print('\n')
     for row in first_round:
@@ -34,6 +37,9 @@ def second_round_display():
             print(element, end='\t|\t')
         print()
 """-------------------------------------------------------------------"""
+
+""" This section program will again ask for some steps and final process """
+
 def second_round():
     result=[]
     final_Guess=""
@@ -78,11 +84,14 @@ def second_round():
 
 
 """-------------------------------------------------------------------"""
+""" This in intro Greeting Section"""
 def intro():
     print("Are you Ready for amazing Guess Game:>")
     print("Can You think a word or name in your mind don't tell me:")
 
 """-------------------------------------------------------------------"""
+""" Here I combine all functions in main functions """
+
 def main():
     print(alphabets)
     intro()
